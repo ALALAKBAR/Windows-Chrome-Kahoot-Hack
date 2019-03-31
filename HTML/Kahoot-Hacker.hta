@@ -1,0 +1,19 @@
+<html> 
+ <head> 
+     <script language="JavaScript" type="text/javascript">  
+	function othername() {
+    var input = document.getElementById("userInput").value;
+	MyObject = new ActiveXObject( "WScript.Shell" )  
+            MyObject.Run("hackink.bat " + input) ; 
+}
+</script>
+ </head> 
+ <body> 
+ <h1>Type Game PIN and then Username Prefix.</h1>
+ <h2>eg. 746746 username</h2>
+ <form id="form" onsubmit="return false;">
+    <input type="text" id="userInput" />
+    <input type="submit" value="START SCRIPT" onclick="othername();" />
+</form>
+ </body> 
+</html> 
